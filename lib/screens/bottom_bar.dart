@@ -2,7 +2,9 @@ import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ticket_booking/screens/home_screen.dart';
+import 'package:ticket_booking/screens/profile_screen.dart';
 import 'package:ticket_booking/screens/search_screen.dart';
+import 'package:ticket_booking/screens/ticket_screen.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({super.key});
@@ -17,8 +19,8 @@ class _BottomBarState extends State<BottomBar> {
   static final List<Widget> _widgetOptions = <Widget>[
     const HomeScreen(),
     const SearchScreen(),
-    const Text("Tickets"),
-    const Text("Profile"),
+    const TicketScreen(),
+    const ProfileScreen(),
   ];
 
   // change index value on tapping items in bottom bar
